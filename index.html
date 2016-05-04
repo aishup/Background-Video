@@ -17,7 +17,7 @@
         #header p {
             text-align: left;
         }
-        #footer {
+        #z_footer {
             background-color:black;
             color:white;
             clear:both;
@@ -25,7 +25,7 @@
            padding:5px;      
         }
 
-        #section video#bgvid { 
+        #section video#z_bgvid { 
             top: 50%;
             left: 50%;
             min-width: 100%;
@@ -41,13 +41,22 @@
             background: url(sample.jpg) no-repeat;
             background-size: cover;  
         }
+        
+        @media screen and (max-device-width: 800px) {
+            html {
+                background: url(polina.jpg) #000 no-repeat center center fixed;
+            }
+            #z_bgvid {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div id="section">
 
-        <video autoplay loop poster="sample.png" id="bgvid">
+        <video autoplay loop poster="sample.png" id="z_bgvid">
             <source src="SampleVideo_1280x720_1mb.mp4" type="video/mp4">
         </video>
         <div id="header">
@@ -59,7 +68,7 @@
         </div>
 
 
-        <p id="footer">
+        <p id="z_footer">
         Copyright &reg; xxxxxxx 
         </p>
 
