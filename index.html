@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Video as Background </title>
+    <style>
+        #header {
+        color:#ffffff;
+        clear: both;
+        text-align:center;
+        padding:5px;
+        }
+        #section {
+            width:100%;
+            float:left;
+            padding:10px;        
+        }
+        #header p {
+            text-align: left;
+        }
+        #footer {
+            background-color:black;
+            color:white;
+            clear:both;
+            text-align:center;
+           padding:5px;      
+        }
+
+        #section video#bgvid { 
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: fixed;
+            z-index: -100;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            background: url(sample.jpg) no-repeat;
+            background-size: cover;  
+        }
+    </style>
+</head>
+<body>
+
+    <div id="section">
+
+        <video autoplay loop poster="sample.png" id="bgvid">
+            <source src="SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+        </video>
+        <div id="header">
+            <h1>Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget eros sit amet enim gravida posuere eu eu ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nibh nisi. Curabitur rhoncus, magna varius iaculis iaculis, dolor leo auctor nibh, a maximus enim eros et lorem. Pellentesque at leo lacus. Duis risus nulla, porta ac mi non, dapibus placerat nisi. Proin eu metus condimentum sem sagittis venenatis. Praesent tincidunt et augue sit amet tempor. Nullam suscipit lorem purus, in semper mi faucibus quis. Ut quis aliquam urna. Aliquam congue mi dui, nec bibendum quam auctor id.
+
+            Fusce mi libero, pellentesque non est at, blandit iaculis nunc. Nullam egestas leo tincidunt mollis mattis. Curabitur auctor vestibulum leo a accumsan. Fusce tincidunt, quam sed iaculis rhoncus, dolor ex rutrum erat, in efficitur orci nisi nec quam. Nullam dui turpis, mollis eu fringilla eget, sodales id eros. Integer dignissim eros eget lectus vestibulum malesuada. Sed sit amet imperdiet enim. Sed ultrices porta nulla, nec maximus sem mollis eget. Donec at lacus rhoncus, gravida dolor ornare, vulputate neque. Nullam a mattis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+        </div>
+
+
+        <p id="footer">
+        Copyright &reg; xxxxxxx 
+        </p>
+
+    </div>
+</body>
+</html>
